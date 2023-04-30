@@ -7,47 +7,155 @@
     <title>ExpatGuardian</title>
   </head>
   <body>
-
     <header>
-
-      <div class="fixed w-full h-[15vh] flex justify-between items-center px-5 bg-gradient-to-b from-sec-blue to-[#FFFFFF00]">
-        <img src="./src/imgs/logo-expat.png" class="h-[60px]"/>
+      <div
+        class="fixed w-full flex justify-between items-center px-5 py-2 bg-gradient-to-b from-sec-blue to-[#FFFFFF00]"
+      >
+        <img src="./src/imgs/logo-expat.png" class="h-[60px]" />
 
         <div class="flex justify-end w-[50%] items-center">
-
           <div class="w-[60%] overflow-hidden mr-3">
-            <div id='burger-navbar' class="text-primary-blue font-lato font-light w-full flex justify-between pr-5 duration-500 mr-10 translate-x-[35rem]">
-              <button id='option-1' class="duration-600 border-b-[1px] border-[#FFFFFF00] hover:border-white duration-100">Contact Us</button>
-              <button id='option-2' class="duration-600 border-b-[1px] border-[#FFFFFF00] hover:border-white duration-100">Services</button>
-              <button id='option-3' class="duration-600 border-b-[1px] border-[#FFFFFF00] hover:border-white duration-100">Location</button>
-              <button id='option-4' class="duration-600 border-b-[1px] border-[#FFFFFF00] hover:border-white duration-100">Home</button>
+            <div
+              id="burger-navbar"
+              class="text-primary-blue font-lato font-light w-full flex justify-between pr-5 duration-500 mr-10 translate-x-[35rem]"
+            >
+              <button
+                id="option-1"
+                class="duration-600 border-b-[1px] border-[#FFFFFF00] hover:border-white duration-100"
+              >
+                Contact Us
+              </button>
+              <button
+                id="option-2"
+                class="duration-600 border-b-[1px] border-[#FFFFFF00] hover:border-white duration-100"
+              >
+                Services
+              </button>
+              <button
+                id="option-3"
+                class="duration-600 border-b-[1px] border-[#FFFFFF00] hover:border-white duration-100"
+              >
+                Location
+              </button>
+              <button
+                id="option-4"
+                class="duration-600 border-b-[1px] border-[#FFFFFF00] hover:border-white duration-100"
+              >
+                Home
+              </button>
             </div>
           </div>
-  
+
           <div class="h-full">
-            <button id='burger-menu' class=" flex flex-col h-[20px] justify-between">
+            <button
+              id="burger-menu"
+              class="flex flex-col h-[20px] justify-between"
+            >
               <div id="burger-top" class="h-[2px] w-[30px] bg-white"></div>
               <div id="burger-middle" class="h-[2px] w-[30px] bg-white"></div>
               <div id="burger-bottom" class="h-[2px] w-[30px] bg-white"></div>
             </button>
           </div>
-
         </div>
-
       </div>
 
-      <div class="bg-[url('/src/imgs/cancun-g7a711dc0c_1920.jpg')] bg-no-repeat bg-cover-pic bg-black h-[100vh] w-full flex flex-col justify-around pb-10">
-        <div class="pl-20 h-[60%] flex flex-col justify-between">
+      <div
+        class="bg-[url('/src/imgs/cancun-g7a711dc0c_1920.jpg')] bg-no-repeat bg-cover-pic max-h-[900px] bg-black h-[100vh] w-full flex flex-col justify-around pb-10"
+      >
+        <div class="pl-20 h-[60%] flex flex-col">
           <div class="flex justify-start w-full">
-            <img src="src/imgs/EXPAT-LOGO-9-350.png" class=""/>
+            <img src="src/imgs/EXPAT-LOGO-9-350.png" class="w-1/3" />
           </div>
-          <div><p class="text-white font-lato tracking-wider">Mexican law firm established 20 year ago dedicated to offer the legal service of: Immigraion<br/>Affairs, Real Estate Affairs, and Establishment of Companies in Mexico.</p></div>
-          <div><button class="text-white font-lato font-light text-sm tracking-widest bg-sec-blue py-3 px-5 rounded-full duration-100 hover:bg-[#2C5E99]">SEE OUR SERVICES</button></div>
+          <div class="mt-20">
+            <p class="text-white font-lato tracking-wider text-sm">
+              Mexican law firm established 20 year ago dedicated to offer the
+              legal service of: Immigraion<br />Affairs, Real Estate Affairs,
+              and Establishment of Companies in Mexico.
+            </p>
+            <button
+              class="text-white font-lato font-light text-sm tracking-widest bg-sec-blue py-3 px-5 rounded-full duration-100 hover:bg-[#2C5E99] mt-5"
+            >
+              SEE OUR SERVICES
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="w-full flex flex-col">
+      <div class="m-auto text-center mt-6">
+        <h2 class="text-[#1E1E1E88] font-medium tracking-wider">
+          We Care About You
+        </h2>
+        <h1 class="text-[#053976] font-bold">OUT OUTSTANDING SERVICES</h1>
+      </div>
 
+      <!-- services -->
+      <div class="w-full flex gap-2 justify-around mt-10 flex-wrap">
+        <!-- service -->
+        <div class="flex flex-col w-28 items-center">
+          <div
+            class="w-20 h-20 bg-[#05356F] rounded-full overflow-hidden flex shadow-2xl"
+          >
+            <img src="./src/imgs/worldwide.png" class="m-auto w-12 h-12" />
+          </div>
+          <div
+            class="text-center uppercase font-semibold text-[#191919] text-sm mt-2"
+          >
+            Immigration procedures affairs
+          </div>
+        </div>
+
+        <!-- service -->
+        <div class="flex flex-col w-28 items-center">
+          <div class="w-20 h-20 bg-[#05356F] rounded-full overflow-hidden flex">
+            <img src="./src/imgs/take-off.png" class="m-auto w-12 h-12" />
+          </div>
+          <div
+            class="text-center uppercase font-semibold text-[#191919] text-sm mt-2"
+          >
+            Moving to méxico
+          </div>
+        </div>
+        <!-- service -->
+        <div class="flex flex-col w-28 items-center">
+          <div class="w-20 h-20 bg-[#05356F] rounded-full overflow-hidden flex">
+            <img src="./src/imgs/real-state.png" class="m-auto w-12 h-12" />
+          </div>
+          <div
+            class="text-center uppercase font-semibold text-[#191919] text-sm mt-2"
+          >
+            Real state affrais
+          </div>
+        </div>
+        <!-- service -->
+        <div class="flex flex-col w-28 items-center">
+          <div class="w-20 h-20 bg-[#05356F] rounded-full overflow-hidden flex">
+            <img src="./src/imgs/mexico.png" class="m-auto w-12 h-12" />
+          </div>
+          <div
+            class="text-center uppercase font-semibold text-[#191919] text-sm mt-2"
+          >
+            Discover México
+          </div>
+        </div>
+
+        <!-- service -->
+        <div class="flex flex-col w-28 items-center">
+          <div class="w-20 h-20 bg-[#05356F] rounded-full overflow-hidden flex">
+            <img src="./src/imgs/hand-shake.png" class="m-auto w-12 h-12" />
+          </div>
+          <div
+            class="text-center uppercase font-semibold text-[#191919] text-sm mt-2"
+          >
+            Business affairs
+          </div>
         </div>
       </div>
 
-    </header>
+      <div class="mx-auto mt-5 px-2 border-b-2 border-[#053976] text-[#053976]">
+        <a href="#">Contact us</a>
+      </div>
+    </section>
 
     <footer></footer>
 

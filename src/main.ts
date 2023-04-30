@@ -9,6 +9,10 @@ const op2 = document.querySelector('#option-2')!;
 const op3 = document.querySelector('#option-3')!;
 const op4 = document.querySelector('#option-4')!;
 
+const burgerTop = document.querySelector('#burger-top')!;
+const burgerMiddle = document.querySelector('#burger-middle')!;
+const burgerBottom = document.querySelector('#burger-bottom')!;
+
 var state = 1;
 
 burgerMenu.addEventListener('click', () => {
@@ -29,6 +33,13 @@ burgerMenu.addEventListener('click', () => {
     op4.classList.add('text-white')
     op4.classList.remove('text-[#FFFFFF00]')
 
+
+    burgerTop.classList.add('rotate-45', 'translate-y-[9px]')
+    burgerMiddle.classList.add('hidden')
+    burgerBottom.classList.add('-rotate-45', '-translate-y-[9px]')
+
+    console.log(burgerTop.classList)
+
   }else{
     state=1;
     op1.classList.remove('text-white')
@@ -42,6 +53,10 @@ burgerMenu.addEventListener('click', () => {
 
     op4.classList.add('text-white')
     op4.classList.remove('text-[#FFFFFF00]')
+
+    burgerTop.classList.remove('rotate-45', 'translate-y-[9px]')
+    burgerMiddle.classList.remove('hidden')
+    burgerBottom.classList.remove('-rotate-45', '-translate-y-[9px]')
   }
 
   // if(state==1){

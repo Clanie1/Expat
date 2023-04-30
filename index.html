@@ -2,13 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/logo-expat.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>ExpatGuardian</title>
   </head>
   <body>
-    <div id="app"></div>
-    <div class="text-blue-500">hell</div>
+
+    <header>
+
+      <div class="fixed w-full h-[15vh] flex justify-between items-center px-5 bg-gradient-to-b from-sec-blue to-[#FFFFFF00]">
+        <img src="./src/imgs/logo-expat.png" class="h-[60px]"/>
+
+        <div class="flex justify-end w-[50%] items-center">
+
+          <div class="w-[60%] overflow-hidden mr-3">
+            <div id='burger-navbar' class="text-primary-blue font-lato font-light w-full flex justify-between pr-5 duration-500 mr-10 translate-x-[35rem]">
+              <button id='option-1' class="duration-600 border-b-[1px] border-[#FFFFFF00] hover:border-white duration-100">Contact Us</button>
+              <button id='option-2' class="duration-600 border-b-[1px] border-[#FFFFFF00] hover:border-white duration-100">Services</button>
+              <button id='option-3' class="duration-600 border-b-[1px] border-[#FFFFFF00] hover:border-white duration-100">Location</button>
+              <button id='option-4' class="duration-600 border-b-[1px] border-[#FFFFFF00] hover:border-white duration-100">Home</button>
+            </div>
+          </div>
+  
+          <div class="h-full">
+            <button id='burger-menu' class=" flex flex-col h-[20px] justify-between">
+              <div id="burger-top" class="h-[2px] w-[30px] bg-white"></div>
+              <div id="burger-middle" class="h-[2px] w-[30px] bg-white"></div>
+              <div id="burger-bottom" class="h-[2px] w-[30px] bg-white"></div>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="bg-[url('/src/imgs/cancun-g7a711dc0c_1920.jpg')] bg-no-repeat bg-cover-pic bg-black h-[100vh] w-full flex flex-col justify-around pb-10">
+        <div class="pl-20 h-[60%] flex flex-col justify-between">
+          <div class="flex justify-start w-full">
+            <img src="src/imgs/EXPAT-LOGO-9-350.png" class=""/>
+          </div>
+          <div><p class="text-white font-lato tracking-wider">Mexican law firm established 20 year ago dedicated to offer the legal service of: Immigraion<br/>Affairs, Real Estate Affairs, and Establishment of Companies in Mexico.</p></div>
+          <div><button class="text-white font-lato font-light text-sm tracking-widest bg-sec-blue py-3 px-5 rounded-full duration-100 hover:bg-[#2C5E99]">SEE OUR SERVICES</button></div>
+
+        </div>
+      </div>
+
+    </header>
+
+    <footer></footer>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('../public/fonts/Lato-Regular.ttf') format('ttf'),
+        url('../public/fonts/Lato-Bold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../public/fonts/Roboto-Regular.ttf') format('ttf'),
+        url('../public/fonts/Roboto-Light.ttf') format('ttf'),
+        url('../public/fonts/Roboto-Bold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}

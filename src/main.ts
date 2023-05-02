@@ -13,6 +13,8 @@ const burgerTop = document.querySelector('#burger-top')!;
 const burgerMiddle = document.querySelector('#burger-middle')!;
 const burgerBottom = document.querySelector('#burger-bottom')!;
 
+const sideBar = document.querySelector('#side-bar')!;
+
 var state = 1;
 
 burgerMenu.addEventListener('click', () => {
@@ -34,16 +36,19 @@ burgerMenu.addEventListener('click', () => {
     op4.classList.remove('text-[#FFFFFF00]')
 
 
-    burgerTop.classList.add('rotate-45', 'translate-y-[9px]')
+    burgerTop.classList.add('-rotate-45', 'translate-y-[9px]')
     burgerMiddle.classList.add('hidden')
-    burgerBottom.classList.add('-rotate-45', '-translate-y-[9px]')
+    burgerBottom.classList.add('rotate-45', '-translate-y-[9px]')
+
+
+    sideBar.classList.remove('translate-x-[11rem]')
 
     console.log(burgerTop.classList)
 
   }else{
     state=1;
-    op1.classList.remove('text-white')
-    op1.classList.add('text-[#FFFFFF00]')
+    op1.classList.add('text-white')
+    op1.classList.remove('text-[#FFFFFF00]')
     
     op2.classList.add('text-white')
     op2.classList.remove('text-[#FFFFFF00]')
@@ -54,9 +59,11 @@ burgerMenu.addEventListener('click', () => {
     op4.classList.add('text-white')
     op4.classList.remove('text-[#FFFFFF00]')
 
-    burgerTop.classList.remove('rotate-45', 'translate-y-[9px]')
+    burgerTop.classList.remove('-rotate-45', 'translate-y-[9px]')
     burgerMiddle.classList.remove('hidden')
-    burgerBottom.classList.remove('-rotate-45', '-translate-y-[9px]')
+    burgerBottom.classList.remove('rotate-45', '-translate-y-[9px]')
+
+    sideBar.classList.add('translate-x-[11rem]')
   }
 
   // if(state==1){

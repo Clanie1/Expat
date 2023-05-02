@@ -7,12 +7,13 @@
     <title>ExpatGuardian</title>
   </head>
   <body>
-
-
-    <section id="side-bar" class="fixed duration-300 h-[100vh] bg-primary-blue w-[40%] right-0 flex pt-20 text-white translate-x-[11rem] md:hidden">
-
-      <div class="flex flex-col w-[100%] h-[30vh] justify-between items-end px-5">
-
+    <section
+      id="side-bar"
+      class="fixed duration-300 h-[100vh] bg-primary-blue w-[40%] right-0 flex pt-20 text-white translate-x-[11rem] md:hidden"
+    >
+      <div
+        class="flex flex-col w-[100%] h-[30vh] justify-between items-end px-5"
+      >
         <button
           id="option-1"
           class="duration-600 border-b-[1px] flex justify-end w-full border-[#FFFFFF00] hover:border-white md:hover:border-white duration-100"
@@ -37,26 +38,26 @@
         >
           Home
         </button>
-
       </div>
-
     </section>
-
-
-
 
     <header>
       <div
         class="fixed w-full flex justify-between items-center px-5 md:py-2 bg-gradient-to-b from-sec-blue to-[#FFFFFF00]"
       >
-        <img src="./src/imgs/logo-expat.png" class="invisible md:visible h-[60px]" />
+        <img
+          src="./src/imgs/logo-expat.png"
+          class="invisible md:visible h-[60px]"
+        />
 
         <div class="flex md:justify-end md:w-[50%] items-center">
-
-
-          <div class="md:w-[80%] w-[30%] hidden md:flex md:overflow-hidden mr-3 md:">
-
-            <div id="burger-navbar" class="text-white font-lato font-light w-full flex justify-between pr-5 duration-500 mr-10 translate-x-[35rem]">
+          <div
+            class="md:w-[80%] w-[30%] hidden md:flex md:overflow-hidden mr-3 md:"
+          >
+            <div
+              id="burger-navbar"
+              class="text-white font-lato font-light w-full flex justify-between pr-5 duration-500 mr-10 translate-x-[35rem]"
+            >
               <button
                 id="option-1"
                 class="duration-600 border-b-[1px] border-[#FFFFFF00] hover:border-white duration-100"
@@ -82,38 +83,42 @@
                 Home
               </button>
             </div>
-
-
           </div>
-
 
           <div class="h-full">
             <button
               id="burger-menu"
               class="flex flex-col h-[20px] justify-between"
             >
-              <div id="burger-top" class="h-[2px] w-[30px] bg-white duration-300"></div>
+              <div
+                id="burger-top"
+                class="h-[2px] w-[30px] bg-white duration-300"
+              ></div>
               <div id="burger-middle" class="h-[2px] w-[30px] bg-white"></div>
-              <div id="burger-bottom" class="h-[2px] w-[30px] bg-white duration-300"></div>
+              <div
+                id="burger-bottom"
+                class="h-[2px] w-[30px] bg-white duration-300"
+              ></div>
             </button>
           </div>
         </div>
       </div>
 
       <div
-        class="bg-[url('/src/imgs/cancun-g7a711dc0c_1920.jpg')] md:bg-no-repeat bg-cover bg-center md:bg-cover-pic md:max-h-[900px] h-[100vh] md:h-[38vh] lg:h-[100vh] w-full flex flex-col justify-around pb-10 "
+        class="bg-[url('/src/imgs/cancun-g7a711dc0c_1920.jpg')] md:bg-no-repeat bg-cover bg-center md:bg-cover-pic md:max-h-[900px] h-[100vh] md:h-[38vh] lg:h-[100vh] w-full flex flex-col justify-around pb-10"
       >
         <div class="md:pl-20 h-[60%] flex flex-col">
-
-          <div class="flex justify-center md:justify-start w-full ">
+          <div class="flex justify-center md:justify-start w-full">
             <img src="src/imgs/EXPAT-LOGO-9-350.png" class="md:w-1/3 w-3/5" />
           </div>
 
           <div class="mt-20 px-10 flex flex-col md:items-start">
-            <p class="text-white w-[50%] font-lato tracking-wider text-sm md:text-left text-center">
+            <p
+              class="text-white w-[50%] font-lato tracking-wider text-sm md:text-left text-center"
+            >
               Mexican law firm established 20 year ago dedicated to offer the
-              legal service of: Immigraion Affairs, Real Estate Affairs,
-              and Establishment of Companies in Mexico.
+              legal service of: Immigraion Affairs, Real Estate Affairs, and
+              Establishment of Companies in Mexico.
             </p>
             <button
               class="text-white font-lato font-light text-sm tracking-widest bg-sec-blue py-3 px-5 rounded-full duration-100 hover:bg-[#2C5E99] mt-5"
@@ -122,11 +127,8 @@
             </button>
           </div>
         </div>
-
       </div>
     </header>
-
-
 
     <section class="w-full flex flex-col my-6">
       <div class="m-auto text-center">
@@ -200,7 +202,7 @@
       </div>
 
       <div class="mx-auto mt-5 px-2 border-b-2 border-[#053976] text-[#053976]">
-        <a href="#">Contact us</a>
+        <a href="#contactUs">Contact us</a>
       </div>
     </section>
 
@@ -244,99 +246,234 @@
 
     <!-- Conctact form -->
 
-    <section class="flex h-[80vh] py-10 justify-around">
-
+    <section class="flex py-10 justify-around " id="contactUs">
       <form class="w-[80%] h-[100%] shadow-2xl flex flex-col md:flex-row">
-
         <div class="w-full md:w-[60%]">
           <div class="flex justify-between p-10 items-center h-[20%]">
-            <span class="font-roboto text-sec-blue text-[2rem]">Contact Us</span>
-            <img src="./src/imgs/mail-icon.png"/>
+            <span class="font-roboto text-sec-blue text-[2rem]"
+              >Contact Us</span
+            >
+            <img src="./src/imgs/mail-icon.png" />
           </div>
           <div class="flex flex-col h-[80%] px-10 pb-10 justify-between">
-
             <div class="flex justify-between">
-
               <div class="flex flex-col w-[40%]">
-                <label class="text-[14px] font-lato font-light tracking-wide">Yor Name</label>
-                <input placeholder="" class="border-b-2 py-1 focus:outline-none focus:border-sec-blue"/>
+                <label class="text-[14px] font-lato font-light tracking-wide"
+                  >Yor Name</label
+                >
+                <input
+                  placeholder=""
+                  class="border-b-2 py-1 focus:outline-none focus:border-sec-blue"
+                />
               </div>
 
               <div class="flex flex-col w-[40%]">
-                <label class="text-[14px] font-lato font-light tracking-wide">Email Address</label>
-                <input placeholder="" class="border-b-2 py-1 focus:outline-none focus:border-sec-blue"/>
+                <label class="text-[14px] font-lato font-light tracking-wide"
+                  >Email Address</label
+                >
+                <input
+                  placeholder=""
+                  class="border-b-2 py-1 focus:outline-none focus:border-sec-blue"
+                />
               </div>
-
             </div>
 
             <div class="flex justify-between">
-
               <div class="flex flex-col w-[40%]">
-                <label class="text-[14px] font-lato font-light tracking-wide">Phone</label>
-                <input placeholder="" class="border-b-2 py-1 focus:outline-none focus:border-sec-blue"/>
+                <label class="text-[14px] font-lato font-light tracking-wide"
+                  >Phone</label
+                >
+                <input
+                  placeholder=""
+                  class="border-b-2 py-1 focus:outline-none focus:border-sec-blue"
+                />
               </div>
 
               <div class="flex flex-col w-[40%]">
-                <label class="text-[14px] font-lato font-light tracking-wide">Company</label>
-                <input placeholder="" class="border-b-2 py-1 focus:outline-none focus:border-sec-blue"/>
+                <label class="text-[14px] font-lato font-light tracking-wide"
+                  >Company</label
+                >
+                <input
+                  placeholder=""
+                  class="border-b-2 py-1 focus:outline-none focus:border-sec-blue"
+                />
               </div>
-
             </div>
 
             <div class="flex justify-between">
-
               <div class="flex flex-col w-[40%]">
-                <label class="text-[14px] font-lato font-light tracking-wide">Message</label>
-                <input placeholder="" class="border-b-2 py-1 focus:outline-none focus:border-sec-blue"/>
+                <label class="text-[14px] font-lato font-light tracking-wide"
+                  >Message</label
+                >
+                <input
+                  placeholder=""
+                  class="border-b-2 py-1 focus:outline-none focus:border-sec-blue"
+                />
               </div>
 
               <div class="flex w-[40%] justify-end">
-                <input value="" type="submit" class="pb-3 rounded-full shadow-xl bg-[url('/src/imgs/send-icon.png')] w-16 h-16 md:h-20 md:w-20 bg-center bg-no-repeat duration-100 hover:scale-[1.05] cursor-pointer">
+                <input
+                  value=""
+                  type="submit"
+                  class="pb-3 rounded-full shadow-xl bg-[url('/src/imgs/send-icon.png')] w-16 h-16 md:h-20 md:w-20 bg-center bg-no-repeat duration-100 hover:scale-[1.05] cursor-pointer"
+                />
               </div>
-
             </div>
-
           </div>
         </div>
 
-        <div class="w-full md:w-[40%] h-full bg-primary-blue flex flex-col justify-between">
-
+        <div
+          class="w-full md:w-[40%] h-full bg-primary-blue flex flex-col justify-between"
+        >
           <div class="flex flex-col p-10 h-[70%] justify-between">
-
-            <span class="text-white text-[25px] mb-10">Contact Information</span>
+            <span class="text-white text-[25px] mb-10"
+              >Contact Information</span
+            >
 
             <div class="flex flex-col text-white h-[60%] justify-between gap-5">
-
               <div class="flex items-center">
-                <img class="mr-5" src="./src/imgs/smartphone.png"/>
+                <img class="mr-5" src="./src/imgs/smartphone.png" />
                 <span class="text-sm">USA +521646 11839901</span>
               </div>
               <div class="flex items-center">
-                <img class="mr-5" src="./src/imgs/email.png"/>
-                <span class="text-sm underline underline-offset-2">hi@expatguardian.com</span>
+                <img class="mr-5" src="./src/imgs/email.png" />
+                <span class="text-sm underline underline-offset-2"
+                  >hi@expatguardian.com</span
+                >
               </div>
               <div class="flex items-center">
-                <img class="mr-5" src="./src/imgs/location.png"/>
-                <span class="text-sm">Ave. Adolfo López Mateos #2030 L2,<br/>Granados, ZP 22840, Ensenada, B.C.</span>
+                <img class="mr-5" src="./src/imgs/location.png" />
+                <span class="text-sm"
+                  >Ave. Adolfo López Mateos #2030 L2,<br />Granados, ZP 22840,
+                  Ensenada, B.C.</span
+                >
               </div>
-
             </div>
-
-
           </div>
 
           <div class="flex p-10">
-            <button class="bg-[url('/src/imgs/whatsapp.png')] h-14 w-14 bg-no-repeat bg-center hover:scale-[1.05]"></button>
-            <button class="bg-[url('/src/imgs/facebook.png')] h-14 w-14 bg-no-repeat bg-center hover:scale-[1.05]"></button>
-            <button class="bg-[url('/src/imgs/instagram.png')] h-14 w-14 bg-no-repeat bg-center hover:scale-[1.05]"></button>
+            <button
+              class="bg-[url('/src/imgs/whatsapp.png')] h-14 w-14 bg-no-repeat bg-center hover:scale-[1.05]"
+            ></button>
+            <button
+              class="bg-[url('/src/imgs/facebook.png')] h-14 w-14 bg-no-repeat bg-center hover:scale-[1.05]"
+            ></button>
+            <button
+              class="bg-[url('/src/imgs/instagram.png')] h-14 w-14 bg-no-repeat bg-center hover:scale-[1.05]"
+            ></button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section class="w-full m-auto text-center my-8 ">
+      <h1 class="text-4xl text-[#053976] font-bold">
+        "We provide peace of mind through our service"
+      </h1>
+    </section>
+    <hr />
+
+    <!-- clientes -->
+    <section class="w-full my-6 flex-col justify-center max-w-[1200px] m-auto">
+      <div class="flex flex-col text-center">
+        <h2 class="text-[#053976] font-semibold text-lg">WHAT OUR CLIENT SAY ABOUT US</h1>
+        <h4 class="text-md font-medium tracking-wide">
+        Hear From Our Satisfied Clients</h4>
+      </div>
+      <!-- clients -->
+        <div class="w-[80%] m-auto py-10 flex gap-4 flex-wrap justify-around">
+          <!-- client card -->
+        <div class="shadow border-2 p-4 w-[450px] rounded-xl flex gap-2 ">
+            <img src="https://th.bing.com/th/id/OIP.qcsZl3-IY7kH-_cmdgtRbQHaE8?pid=ImgDet&rs=1" class="w-[100px] h-[100px] rounded-full object-cover"/>
+            <div class="flex flex-col justify-around">
+              <h3 class="text-[#032146] font-semibold text-md">“I had a great experience here with Carlos...”</h3>
+              <div class="flex gap-1">
+                <img src="./src/imgs/star.png" class="w-5 h-5"/>
+
+                <img src="./src/imgs/star.png" class="w-5 h-5"/>
+                <img src="./src/imgs/star.png" class="w-5 h-5"/>
+                <img src="./src/imgs/star.png" class="w-5 h-5"/>
+                <img src="./src/imgs/star.png" class="w-5 h-5"/>
+              </div>
+              <a href="#" class=" hover:underline duration-100">Watch Video ></a>
+            </div>
           </div>
 
+           <!-- client card -->
+      <div class="shadow border-2 p-4 w-[450px] rounded-xl flex gap-2 justify-end">
+            <div class="flex flex-col justify-around items-end">
+              <h3 class="text-[#032146] font-semibold text-md">“Thank you Carlos, thank you Christian...”</h3>
+              <div class="flex gap-1">
+                <img src="./src/imgs/star.png" class="w-5 h-5"/>
 
+                <img src="./src/imgs/star.png" class="w-5 h-5"/>
+                <img src="./src/imgs/star.png" class="w-5 h-5"/>
+                <img src="./src/imgs/star.png" class="w-5 h-5"/>
+                <img src="./src/imgs/star.png" class="w-5 h-5"/>
+              </div>
+              <a href="#" class=" hover:underline duration-100">Watch Video ></a>
+            </div>
+            <img src="https://th.bing.com/th/id/OIP.qcsZl3-IY7kH-_cmdgtRbQHaE8?pid=ImgDet&rs=1" class="w-[100px] h-[100px] rounded-full object-cover"/>
+          </div>
+          
+
+ <!-- client card -->
+        <div class="shadow border-2 p-4 w-[450px] rounded-xl flex gap-2 ">
+            <img src="https://th.bing.com/th/id/OIP.qcsZl3-IY7kH-_cmdgtRbQHaE8?pid=ImgDet&rs=1" class="w-[100px] h-[100px] rounded-full object-cover"/>
+            <div class="flex flex-col justify-around">
+              <h3 class="text-[#032146] font-semibold text-md">“We are very pleased how fast everything
+                went...”</h3>
+              <div class="flex gap-1">
+                <img src="./src/imgs/star.png" class="w-5 h-5"/>
+
+                <img src="./src/imgs/star.png" class="w-5 h-5"/>
+                <img src="./src/imgs/star.png" class="w-5 h-5"/>
+                <img src="./src/imgs/star.png" class="w-5 h-5"/>
+                <img src="./src/imgs/star.png" class="w-5 h-5"/>
+              </div>
+              <a href="#" class=" hover:underline duration-100">Watch Video ></a>
+            </div>
+          </div>
+
+            <!-- client card -->
+            <div class="shadow border-2 p-4 w-[450px] rounded-xl flex gap-2 justify-end">
+              <div class="flex flex-col justify-around items-end">
+                <h3 class="text-[#032146] font-semibold text-md">“This has been the best experience ever...”</h3>
+                <div class="flex gap-1">
+                  <img src="./src/imgs/star.png" class="w-5 h-5"/>
+  
+                  <img src="./src/imgs/star.png" class="w-5 h-5"/>
+                  <img src="./src/imgs/star.png" class="w-5 h-5"/>
+                  <img src="./src/imgs/star.png" class="w-5 h-5"/>
+                  <img src="./src/imgs/star.png" class="w-5 h-5"/>
+                </div>
+                <a href="#" class=" hover:underline duration-100">Watch Video ></a>
+              </div>
+              <img src="https://th.bing.com/th/id/OIP.qcsZl3-IY7kH-_cmdgtRbQHaE8?pid=ImgDet&rs=1" class="w-[100px] h-[100px] rounded-full object-cover"/>
+            </div>
+    </section>
+
+    <section class=" my-10 m-auto flex w-[80%] max-w-[1050px]">
+      <img src="./src/imgs/security.png" class="w-1/2"/>
+      <div class="w-1/2 flex-col justify-center flex gap-10">
+        <h1 class="font-bold tracking-wider">YOUR DATA IS <label class="text-[#053874]">SECURE</label> WITH US</h1>
+        <p>We are responsible for the use and protection of your personal data, which will be used only and exclusively to carry out the objectives of each required process.</p>
+      </div>
+    </section>
+
+    <section class="my-10 flex bg-[#091525] w-[80%] max-w-[1050px] m-auto rounded-lg">
+      <div class="flex flex-col px-12 w-1/2 text-white gap-10 justify-center">
+        <div class="flex flex-col">
+          <h1 class="uppercase font-semibold tracking-wider text-lg">Carlos Victorica</h1>
+          <span class="text-[#0BA4E0] text-md">Immigration Lawyer</span>
         </div>
 
-      </form>
-
+        <p class="font-lato text-md">An attorney with more than 20 years of experience supporting and protecting foreigners who wish to move and live in Mexico providing peace of mind and legal certainty
+        </p>
+      </div>
+      <img src="./src/imgs/EXPAT-LOGO-9-350.png" class="w-1/2 h-[400px]"/>
     </section>
+
 
     <footer></footer>
 

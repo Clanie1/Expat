@@ -58,30 +58,34 @@
               id="burger-navbar"
               class="text-white font-lato font-light w-full flex justify-between pr-5 duration-500 mr-10 translate-x-[35rem]"
             >
-              <button
+              <a
+              href="#contactUs"
                 id="option-1"
                 class="duration-600 border-b-[1px] border-[#FFFFFF00] hover:border-white duration-100"
               >
                 Contact Us
-              </button>
-              <button
+              </a>
+              <a
+              href="#service"
                 id="option-2"
                 class="duration-600 border-b-[1px] border-[#FFFFFF00] hover:border-white duration-100"
               >
                 Services
-              </button>
-              <button
+              </a>
+              <a
                 id="option-3"
+                href="#location"
                 class="duration-600 border-b-[1px] border-[#FFFFFF00] hover:border-white duration-100"
               >
                 Location
-              </button>
-              <button
+              </a>
+              <a
                 id="option-4"
                 class="duration-600 border-b-[1px] border-[#FFFFFF00] hover:border-white duration-100"
+                href="#home"
               >
                 Home
-              </button>
+              </a>
             </div>
           </div>
 
@@ -105,32 +109,34 @@
       </div>
 
       <div
-        class="bg-[url('/src/imgs/cancun-g7a711dc0c_1920.jpg')] md:bg-no-repeat bg-cover bg-center md:bg-cover-pic md:max-h-[900px] h-[100vh] md:h-[38vh] lg:h-[100vh] w-full flex flex-col justify-around pb-10"
+        class="bg-[url('/src/imgs/cancun-g7a711dc0c_1920.jpg')] bg-no-repeat bg-cover bg-center md:bg-cover-pic md:max-h-[900px] h-[80vh] md:h-[38vh] lg:h-[100vh] w-full flex flex-col justify-around pb-10"
+        id="home"
       >
         <div class="md:pl-20 h-[60%] flex flex-col">
           <div class="flex justify-center md:justify-start w-full">
             <img src="src/imgs/EXPAT-LOGO-9-350.png" class="md:w-1/3 w-3/5" />
           </div>
 
-          <div class="mt-20 px-10 flex flex-col md:items-start">
+          <div class="mt-20 px-0 md:px-10 flex flex-col md:items-start items-center">
             <p
-              class="text-white w-[50%] font-lato tracking-wider text-sm md:text-left text-center"
+              class="text-white w-[70%] md:w-[50%] font-lato tracking-wider text-sm md:text-left text-center"
             >
               Mexican law firm established 20 year ago dedicated to offer the
               legal service of: Immigraion Affairs, Real Estate Affairs, and
               Establishment of Companies in Mexico.
             </p>
-            <button
-              class="text-white font-lato font-light text-sm tracking-widest bg-sec-blue py-3 px-5 rounded-full duration-100 hover:bg-[#2C5E99] mt-5"
+            <a
+              class="text-white font-lato font-light text-sm tracking-widest bg-sec-blue py-3 px-5 rounded-full duration-100 hover:bg-[#2C5E99] mt-14 md:mt-5"
+              href="#service"
             >
               SEE OUR SERVICES
-            </button>
+            </a>
           </div>
         </div>
       </div>
     </header>
 
-    <section class="w-full flex flex-col my-6">
+    <section class="w-full flex flex-col my-6" id="service">
       <div class="m-auto text-center">
         <h2 class="text-[#1E1E1E88] font-medium tracking-wider">
           We Care About You
@@ -139,7 +145,7 @@
       </div>
 
       <!-- services -->
-      <div class="w-full flex gap-2 justify-around mt-10 flex-wrap">
+      <div class="w-full flex gap-2 justify-center md:justify-around mt-10 flex-wrap ">
         <!-- service -->
         <div class="flex flex-col w-28 items-center">
           <div
@@ -367,7 +373,7 @@
     </section>
 
     <section class="w-full m-auto text-center my-8 ">
-      <h1 class="text-4xl text-[#053976] font-bold">
+      <h1 class=" text-2xl mdtext-4xl text-[#053976] font-bold">
         "We provide peace of mind through our service"
       </h1>
     </section>
@@ -381,9 +387,9 @@
         Hear From Our Satisfied Clients</h4>
       </div>
       <!-- clients -->
-        <div class="w-[80%] m-auto py-10 flex gap-4 flex-wrap justify-around">
+        <div class=" w-[100%] md:w-[80%] m-auto py-10 flex gap-4 flex-wrap justify-around">
           <!-- client card -->
-        <div class="shadow border-2 p-4 w-[450px] rounded-xl flex gap-2 ">
+        <div class="shadow border-2 p-4 w-[450px] md:rounded-xl flex gap-2 ">
             <img src="https://th.bing.com/th/id/OIP.qcsZl3-IY7kH-_cmdgtRbQHaE8?pid=ImgDet&rs=1" class="w-[100px] h-[100px] rounded-full object-cover"/>
             <div class="flex flex-col justify-around">
               <h3 class="text-[#032146] font-semibold text-md">“I had a great experience here with Carlos...”</h3>
@@ -400,8 +406,8 @@
           </div>
 
            <!-- client card -->
-      <div class="shadow border-2 p-4 w-[450px] rounded-xl flex gap-2 justify-end">
-            <div class="flex flex-col justify-around items-end">
+      <div class="shadow border-2 p-4 w-[450px] md:rounded-xl flex gap-2 justify-end">
+            <div class="flex flex-col justify-around items-end text-end ">
               <h3 class="text-[#032146] font-semibold text-md">“Thank you Carlos, thank you Christian...”</h3>
               <div class="flex gap-1">
                 <img src="./src/imgs/star.png" class="w-5 h-5"/>
@@ -418,7 +424,7 @@
           
 
  <!-- client card -->
-        <div class="shadow border-2 p-4 w-[450px] rounded-xl flex gap-2 ">
+        <div class="shadow border-2 p-4 w-[450px] md:rounded-xl flex gap-2 ">
             <img src="https://th.bing.com/th/id/OIP.qcsZl3-IY7kH-_cmdgtRbQHaE8?pid=ImgDet&rs=1" class="w-[100px] h-[100px] rounded-full object-cover"/>
             <div class="flex flex-col justify-around">
               <h3 class="text-[#032146] font-semibold text-md">“We are very pleased how fast everything
@@ -436,7 +442,7 @@
           </div>
 
             <!-- client card -->
-            <div class="shadow border-2 p-4 w-[450px] rounded-xl flex gap-2 justify-end">
+            <div class="shadow border-2 p-4 w-[450px] md:rounded-xl flex gap-2 justify-end">
               <div class="flex flex-col justify-around items-end">
                 <h3 class="text-[#032146] font-semibold text-md">“This has been the best experience ever...”</h3>
                 <div class="flex gap-1">
@@ -453,28 +459,27 @@
             </div>
     </section>
 
-    <section class=" my-10 m-auto flex w-[80%] max-w-[1050px]">
-      <img src="./src/imgs/security.png" class="w-1/2"/>
-      <div class="w-1/2 flex-col justify-center flex gap-10">
+    <section class=" my-10 m-auto flex flex-col md:flex-row w-[80%] max-w-[1050px] items-center text-center md:text-start">
+      <img src="./src/imgs/security.png" class="w-full md:w-1/2"/>
+      <div class="w-full md:w-1/2 flex-col justify-center flex gap-10">
         <h1 class="font-bold tracking-wider">YOUR DATA IS <label class="text-[#053874]">SECURE</label> WITH US</h1>
         <p>We are responsible for the use and protection of your personal data, which will be used only and exclusively to carry out the objectives of each required process.</p>
       </div>
     </section>
 
-    <section class="my-10 flex bg-[#091525] w-[80%] max-w-[1050px] m-auto rounded-lg">
-      <div class="flex flex-col px-12 w-1/2 text-white gap-10 justify-center">
+    <section class="my-10 flex flex-col-reverse md:flex-row bg-[#091525] w-[80%] max-w-[1050px] m-auto rounded-lg items-center text-center md:text-start">
+      <div class="flex flex-col px-12 w-full md:w-1/2 text-white gap-10 justify-center py-5">
         <div class="flex flex-col">
           <h1 class="uppercase font-semibold tracking-wider text-lg">Carlos Victorica</h1>
           <span class="text-[#0BA4E0] text-md">Immigration Lawyer</span>
         </div>
-
         <p class="font-lato text-md">An attorney with more than 20 years of experience supporting and protecting foreigners who wish to move and live in Mexico providing peace of mind and legal certainty
         </p>
       </div>
       <img src="./src/imgs/EXPAT-LOGO-9-350.png" class="w-1/2 h-[400px]"/>
     </section>
 
-    <section class="mt-10 bg-primary-blue py-8 px-10">
+    <section class="mt-10 bg-primary-blue py-8 px-10" id="location">
 
       <div style="width: 100%"><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=31.856389,%20-116.609306+(ExpatGuardian)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">area maps</a></iframe></div>
 

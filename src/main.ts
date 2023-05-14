@@ -1,5 +1,7 @@
 import "./style.css";
 
+import emailjs, {init} from 'emailjs-com'
+
 const burgerMenu = document.querySelector("#burger-menu")!;
 const navBar = document.querySelector<HTMLDivElement>("#burger-navbar")!;
 
@@ -17,7 +19,7 @@ const sideBar = document.querySelector("#side-bar")!;
 var state = 1;
 
 burgerMenu.addEventListener("click", () => {
-  navBar.classList.toggle("translate-x-[35rem]");
+  navBar.classList.toggle("translate-x-[120%]");
 
   if (state == 1) {
     state = 2;
@@ -37,7 +39,7 @@ burgerMenu.addEventListener("click", () => {
     burgerMiddle.classList.add("hidden");
     burgerBottom.classList.add("rotate-45", "-translate-y-[9px]");
 
-    sideBar.classList.remove("translate-x-[11rem]");
+    sideBar.classList.remove("translate-x-[150%]");
 
     console.log(burgerTop.classList);
   } else {
@@ -58,7 +60,7 @@ burgerMenu.addEventListener("click", () => {
     burgerMiddle.classList.remove("hidden");
     burgerBottom.classList.remove("rotate-45", "-translate-y-[9px]");
 
-    sideBar.classList.add("translate-x-[11rem]");
+    sideBar.classList.add("translate-x-[150%]");
   }
 
   // if(state==1){
@@ -77,3 +79,23 @@ burgerMenu.addEventListener("click", () => {
   //   op4.classList.replace('duration-100','duration-600')
   // }
 });
+
+
+
+// init('6BZ21eRm0ehBurk_p');
+
+// function sendEmail() {
+
+//   emailjs.send("service_lb3v6op", "template_vqyrh4p", {
+//       to_name: "calebpayan75@gmail.com",
+//       from_name: "Example",
+//       message: "This is a test email",
+//   })
+//   .then((response) => {
+//       console.log('Success!', response.status, response.text);
+//   }, (err) => {
+//       console.log('Failed...', err);
+//   });
+// }
+
+// (window as any).sendEmail = sendEmail;

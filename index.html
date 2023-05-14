@@ -5,11 +5,40 @@
     <link rel="icon" type="image/svg+xml" href="/logo-expat.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ExpatGuardian</title>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('-BCa9MsZf98r-LZhC');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_ecenrxq', 'template_rz8h30x', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                        alert('Oops, Something went wrong!')
+                    });
+
+                document.getElementById('contact-form').reset()
+                window.scrollTo(0,0)
+            });
+        }
+    </script>
+
   </head>
-  <body>
+  <body class="container max-w-screen-2xl mx-auto">
     <section
       id="side-bar"
-      class="fixed duration-300 h-[100vh] bg-primary-blue w-[40%] right-0 flex pt-20 text-white translate-x-[11rem] md:hidden"
+      class="fixed duration-300 h-[100vh] bg-primary-blue w-[40%] right-0 flex pt-20 text-white translate-x-[150%] md:hidden"
     >
       <div
         class="flex flex-col w-[100%] h-[30vh] justify-between items-end px-5"
@@ -43,7 +72,7 @@
 
     <header>
       <div
-        class="fixed w-full flex justify-between items-center px-5 md:py-2 bg-gradient-to-b from-sec-blue to-[#FFFFFF00]"
+        class="fixed inset-x-0 w-full flex justify-between items-center px-5 md:py-2 bg-gradient-to-b from-sec-blue to-[#FFFFFF00]"
       >
         <img
           src="./src/imgs/logo-expat.png"
@@ -56,7 +85,7 @@
           >
             <div
               id="burger-navbar"
-              class="text-white font-lato font-light w-full flex justify-between pr-5 duration-500 mr-10 translate-x-[35rem]"
+              class="text-white font-lato font-light w-full flex justify-between pr-5 duration-500 mr-10 translate-x-[120%]"
             >
               <a
               href="#contactUs"
@@ -109,7 +138,7 @@
       </div>
 
       <div
-        class="bg-[url('/src/imgs/cancun-g7a711dc0c_1920.jpg')] bg-no-repeat bg-cover bg-center md:bg-cover-pic md:max-h-[900px] h-[80vh] md:h-[38vh] lg:h-[100vh] w-full flex flex-col justify-around pb-10"
+        class="bg-[url('/src/imgs/cancun-g7a711dc0c_1920.jpg')] bg-no-repeat bg-cover bg-center md:max-h-[900px] h-[80vh] md:h-[38vh] lg:h-[100vh] w-full flex flex-col justify-around pb-10"
         id="home"
       >
         <div class="md:pl-20 h-[60%] flex flex-col">
@@ -253,7 +282,8 @@
     <!-- Conctact form -->
 
     <section class="flex py-10 justify-around " id="contactUs">
-      <form class="w-[80%] h-[100%] shadow-2xl flex flex-col md:flex-row">
+      <form class="w-[80%] h-[100%] shadow-2xl flex flex-col md:flex-row" id="contact-form">
+        <input type="hidden" name="contact_number">
         <div class="w-full md:w-[60%]">
           <div class="flex justify-between p-10 items-center h-[20%]">
             <span class="font-roboto text-sec-blue text-[2rem]"
@@ -270,6 +300,8 @@
                 <input
                   placeholder=""
                   class="border-b-2 py-1 focus:outline-none focus:border-sec-blue"
+                  type="text"
+                  name="from_name"
                 />
               </div>
 
@@ -280,6 +312,8 @@
                 <input
                   placeholder=""
                   class="border-b-2 py-1 focus:outline-none focus:border-sec-blue"
+                  type="email"
+                  name="from_email"
                 />
               </div>
             </div>
@@ -292,6 +326,8 @@
                 <input
                   placeholder=""
                   class="border-b-2 py-1 focus:outline-none focus:border-sec-blue"
+                  type="tel"
+                  name="from_phone"
                 />
               </div>
 
@@ -302,6 +338,8 @@
                 <input
                   placeholder=""
                   class="border-b-2 py-1 focus:outline-none focus:border-sec-blue"
+                  type="text"
+                  name="from_company"
                 />
               </div>
             </div>
@@ -314,6 +352,8 @@
                 <input
                   placeholder=""
                   class="border-b-2 py-1 focus:outline-none focus:border-sec-blue"
+                  type="text"
+                  name="message"
                 />
               </div>
 
@@ -390,7 +430,7 @@
         <div class=" w-[100%] md:w-[80%] m-auto py-10 flex gap-4 flex-wrap justify-around">
           <!-- client card -->
         <div class="shadow border-2 p-4 w-[450px] md:rounded-xl flex gap-2 ">
-            <img src="https://th.bing.com/th/id/OIP.qcsZl3-IY7kH-_cmdgtRbQHaE8?pid=ImgDet&rs=1" class="w-[100px] h-[100px] rounded-full object-cover"/>
+            <img src="./src/imgs/cust1.png" class="w-[100px] h-[100px] rounded-full object-cover"/>
             <div class="flex flex-col justify-around">
               <h3 class="text-[#032146] font-semibold text-md">“I had a great experience here with Carlos...”</h3>
               <div class="flex gap-1">
@@ -401,7 +441,7 @@
                 <img src="./src/imgs/star.png" class="w-5 h-5"/>
                 <img src="./src/imgs/star.png" class="w-5 h-5"/>
               </div>
-              <a href="#" class=" hover:underline duration-100">Watch Video ></a>
+              <a href="https://www.youtube.com/watch?v=rAM2Hr9M1Ks" class=" hover:underline duration-100">Watch Video ></a>
             </div>
           </div>
 
@@ -417,15 +457,15 @@
                 <img src="./src/imgs/star.png" class="w-5 h-5"/>
                 <img src="./src/imgs/star.png" class="w-5 h-5"/>
               </div>
-              <a href="#" class=" hover:underline duration-100">Watch Video ></a>
+              <a href="https://www.youtube.com/watch?v=F-IOHsa2ohI" class=" hover:underline duration-100">Watch Video ></a>
             </div>
-            <img src="https://th.bing.com/th/id/OIP.qcsZl3-IY7kH-_cmdgtRbQHaE8?pid=ImgDet&rs=1" class="w-[100px] h-[100px] rounded-full object-cover"/>
+            <img src="./src/imgs/cust2.png" class="w-[100px] h-[100px] rounded-full object-cover"/>
           </div>
           
 
  <!-- client card -->
         <div class="shadow border-2 p-4 w-[450px] md:rounded-xl flex gap-2 ">
-            <img src="https://th.bing.com/th/id/OIP.qcsZl3-IY7kH-_cmdgtRbQHaE8?pid=ImgDet&rs=1" class="w-[100px] h-[100px] rounded-full object-cover"/>
+            <img src="./src/imgs/cust3.png" class="w-[100px] h-[100px] rounded-full object-cover"/>
             <div class="flex flex-col justify-around">
               <h3 class="text-[#032146] font-semibold text-md">“We are very pleased how fast everything
                 went...”</h3>
@@ -437,7 +477,7 @@
                 <img src="./src/imgs/star.png" class="w-5 h-5"/>
                 <img src="./src/imgs/star.png" class="w-5 h-5"/>
               </div>
-              <a href="#" class=" hover:underline duration-100">Watch Video ></a>
+              <a href="https://www.youtube.com/watch?v=MJZ8UHKdcQA" class=" hover:underline duration-100">Watch Video ></a>
             </div>
           </div>
 
@@ -453,9 +493,9 @@
                   <img src="./src/imgs/star.png" class="w-5 h-5"/>
                   <img src="./src/imgs/star.png" class="w-5 h-5"/>
                 </div>
-                <a href="#" class=" hover:underline duration-100">Watch Video ></a>
+                <a href="https://youtu.be/JqtmJwhyHfs" class=" hover:underline duration-100">Watch Video ></a>
               </div>
-              <img src="https://th.bing.com/th/id/OIP.qcsZl3-IY7kH-_cmdgtRbQHaE8?pid=ImgDet&rs=1" class="w-[100px] h-[100px] rounded-full object-cover"/>
+              <img src="./src/imgs/cust4.png" class="w-[100px] h-[100px] rounded-full object-cover"/>
             </div>
     </section>
 
@@ -476,7 +516,9 @@
         <p class="font-lato text-md">An attorney with more than 20 years of experience supporting and protecting foreigners who wish to move and live in Mexico providing peace of mind and legal certainty
         </p>
       </div>
-      <img src="./src/imgs/EXPAT-LOGO-9-350.png" class="w-1/2 h-[400px]"/>
+      <div class="bg-[url('./src/imgs/image_profile.png')] w-1/2 h-full">
+      </div>
+      <!-- <img src="" class="w-1/2 h-[400px]"/> -->
     </section>
 
     <section class="mt-10 bg-primary-blue py-8 px-10" id="location">
@@ -489,5 +531,6 @@
     <footer></footer>
 
     <script type="module" src="/src/main.ts"></script>
+
   </body>
 </html>

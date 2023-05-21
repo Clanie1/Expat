@@ -1,7 +1,5 @@
 import "./style.css";
 
-import emailjs, {init} from 'emailjs-com'
-
 const burgerMenu = document.querySelector("#burger-menu")!;
 const navBar = document.querySelector<HTMLDivElement>("#burger-navbar")!;
 
@@ -79,8 +77,6 @@ burgerMenu.addEventListener("click", () => {
   //   op4.classList.replace('duration-100','duration-600')
   // }
 });
-
-
 
 // init('6BZ21eRm0ehBurk_p');
 

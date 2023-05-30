@@ -8,7 +8,9 @@ Tecnologías en uso:
   - EmailJs
 
 Proceso de instalación:
-  Al clonar el repositorio de forma local es necesario intalar los módulos del proyecto. Por lo que se debe correr el siguinete comando       dentro de la carpeta root del proyecto.
+
+Al clonar el repositorio de forma local es necesario intalar los módulos del proyecto. Por lo que se debe correr el siguinete comando       dentro de la carpeta root del proyecto.
   - "npm install"
-  Para correr el servidor de desarrollo se utiliza el siguiente comando.
+
+Para correr el servidor de desarrollo se utiliza el siguiente comando.
   - "npm run dev"

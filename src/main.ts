@@ -39,7 +39,6 @@ burgerMenu.addEventListener("click", () => {
 
     sideBar.classList.remove("translate-x-[150%]");
 
-    console.log(burgerTop.classList);
   } else {
     state = 1;
     op1.classList.add("text-white");
